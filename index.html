@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    <header>
+        <h1>Decodificador de texto</h1>
+        <h2>Lembre-se: não utilize acentuações e pontuações!</h2>
+    </header>
+
+    <main>
+        <section id="container1">
+            <textarea name="texto" id="inserir" cols="20" rows="10" placeholder="Digite o texto" spellcheck="false"></textarea>
+        </section>
+
+        <div id="itens">
+            <p>
+                <input type="button" class="bot" id="botCripto" value="Criptografar">
+            </p>
+
+            <p>
+                <input type="button" class="bot" id="botDescripto" value="Descriptografar">
+            </p>
+
+            <fieldset>
+                <legend>Nível Criptografia</legend>
+                <abbr title="Distância entre letras"><input type="range" name="range" id="inivel" min="1" max="5" value="1"></abbr>
+                <p><output id="output">1</output></p>
+            </fieldset>
+
+            <p>
+                <input type="button" class="bot" id="botLimpar" value="Limpar">
+            </p>
+
+            <p>
+                <input type="button" class="bot" id="botCopiar" value="Copiar">
+            </p>
+        </div>
+
+        <section id="container2">
+            <textarea name="texto" id="resultado" cols="20" rows="10" placeholder="Texto criptografado" readonly spellcheck="false"></textarea>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
